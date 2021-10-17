@@ -1,12 +1,19 @@
+[![npm](https://img.shields.io/npm/v/@andrewcaires/utils.js?color=blue&logo=npm)](https://www.npmjs.com/package/@andrewcaires/utils.js)
+[![downloads](https://img.shields.io/npm/dt/@andrewcaires/utils.js?color=blue)](https://www.npmjs.com/package/@andrewcaires/utils.js)
+[![size](https://img.shields.io/github/repo-size/andrewcaires/utils.js?color=blue)](https://github.com/andrewcaires/utils.js)
+[![language](https://img.shields.io/github/languages/top/andrewcaires/utils.js?color=blue)](https://github.com/andrewcaires/utils.js)
+[![commit](https://img.shields.io/github/last-commit/andrewcaires/utils.js?color=blue&logo=github)](https://github.com/andrewcaires/utils.js)
+[![license](https://img.shields.io/github/license/andrewcaires/utils.js?color=blue)](https://github.com/andrewcaires/utils.js/blob/main/LICENSE)
+
 # utils.js
 
 JavaScript utility library for web and nodejs development
 
 ## Installation
 
-```npm i @andrewcaires/utils.js```
+`npm i @andrewcaires/utils.js`
 
-## APIs
+## Api
 
 ### EventEmitter
 
@@ -65,20 +72,7 @@ emitter.emit('event', 'on emit event');
 Determine the internal JavaScript [[Class]] of an object.
 
 ```js
-import {
-  isArray
-  isBoolean
-  isFunction
-  isNumber
-  isObject
-  isString
-  isFloat
-  isInteger
-  isNull
-  isUndefined
-  isValid
-  type
-} from '@andrewcaires/utils.js';
+import { isArray, isBoolean, isFunction, isNumber, isObject, isString, isFloat, isInteger, isNull, isUndefined, isValid, type } from '@andrewcaires/utils.js';
 ```
 
 - `isArray` Finds whether a variable is an array.
