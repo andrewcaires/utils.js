@@ -12,7 +12,7 @@ const banner = `/*!
 `;
 
 const name = 'UtilsJS';
-const input = 'src/index.ts';
+const input = 'src/UtilsJS.ts';
 
 const output = (formats) => {
 

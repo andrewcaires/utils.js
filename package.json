@@ -2,10 +2,10 @@
   "name": "@andrewcaires/utils.js",
   "version": "0.0.3",
   "description": "JavaScript utility library for web and nodejs development",
-  "main": "dist/utils.umd.js",
-  "module": "dist/utils.esm.js",
-  "unpkg": "dist/utils.min.js",
-  "types": "dist/types/utils.d.ts",
+  "main": "dist/utilsjs.umd.js",
+  "module": "dist/utilsjs.esm.js",
+  "unpkg": "dist/utilsjs.min.js",
+  "types": "dist/types/UtilsJS.d.ts",
   "scripts": {
     "build": "rollup -c build/rollup.config.js"
   },
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/andrewcaires/utils.js#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.0",
-    "@rollup/plugin-typescript": "^8.2.5",
+    "@rollup/plugin-typescript": "^8.3.0",
     "rollup": "^2.58.0",
     "rollup-plugin-terser": "^7.0.2"
   }
