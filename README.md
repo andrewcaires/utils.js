@@ -32,7 +32,7 @@ const custom = new CustomEvent();
 
 ```
 
-- `EventEmitter.on` Adds the listener function to the end of the listeners array for the event named.
+- `EventEmitter.on` Adds the listener function to the end of the listeners array for the event named
 
 ```js
 const cb = (data) => {
@@ -43,7 +43,7 @@ const cb = (data) => {
 emitter.on('event', cb);
 ```
 
-- `EventEmitter.once` Adds the listener function to the end of the listeners array for the event named. The next time event is triggered, this listener is removed.
+- `EventEmitter.once` Adds the listener function to the end of the listeners array for the event named. The next time event is triggered, this listener is removed
 
 ```js
 const cb = (data) => {
@@ -54,13 +54,13 @@ const cb = (data) => {
 emitter.once('event', cb);
 ```
 
-- `EventEmitter.off` Removes the specified listener from the listener array for the event named.
+- `EventEmitter.off` Removes the specified listener from the listener array for the event named
 
 ```js
 emitter.off('event', cb);
 ```
 
-- `EventEmitter.emit` Synchronously calls each of the listeners registered for the event named.
+- `EventEmitter.emit` Synchronously calls each of the listeners registered for the event named
 
 ```js
 emitter.emit('event', 'on emit event');
@@ -69,81 +69,81 @@ emitter.emit('event', 'on emit event');
 
 ### type
 
-Determine the internal JavaScript [[Class]] of an object.
+Determine the internal JavaScript [[Class]] of an object
 
 ```js
 import { isArray, isBoolean, isFunction, isNumber, isObject, isString, isFloat, isInteger, isNull, isUndefined, isValid, type } from '@andrewcaires/utils.js';
 ```
 
-- `isArray` Finds whether a variable is an array.
+- `isArray` Finds whether a variable is an array
 
 ```js
 isArray([]) // > true
 ```
 
-- `isBoolean` Finds out whether a variable is a boolean.
+- `isBoolean` Finds out whether a variable is a boolean
 
 ```js
 isBoolean(true) // > true
 isBoolean(false) // > true
 ```
 
-- `isFunction` Find whether the type of a variable is function.
+- `isDef` Find out if a variable has been defined
+
+```js
+isDef(any) // > true
+```
+
+- `isFunction` Find whether the type of a variable is function
 
 ```js
 isFunction(function() {}) // > true
 ```
 
-- `isNumber` Finds whether a variable is an number.
+- `isNumber` Finds whether a variable is an number
 
 ```js
 isNumber(1) // > true
 isNumber(1.7) // > true
 ```
 
-- `isObject` Finds whether a variable is an object.
+- `isObject` Finds whether a variable is an object
 
 ```js
 isObject({}) // > true
 ```
 
-- `isString` Find whether the type of a variable is string.
+- `isString` Find whether the type of a variable is string
 
 ```js
 isString('') // > true
 ```
 
-- `isFloat` Finds whether the type of a variable is float.
+- `isFloat` Finds whether the type of a variable is float
 
 ```js
 isFloat(1.7) // > true
 ```
 
-- `isInteger` Find whether the type of a variable is integer.
+- `isInteger` Find whether the type of a variable is integer
 
 ```js
 isInteger(1) // > true
 ```
 
-- `isNull` Finds whether a variable is null.
+- `isNull` Finds whether a variable is null
 
 ```js
 isNull(null) // > true
 ```
 
-- `isUndefined` Finds whether a variable is undefined.
+- `isUndefined` Finds whether a variable is undefined
 
 ```js
 isUndefined(undefined) // > true
 ```
 
-- `isValid` Find out if a variable is valid.
-
-```js
-isValid(any) // > true
-```
-
-- `type` Get the type of a variable.
+- `type` Get the type of a variable
 
 ```js
 type([]); // => 'array'
