@@ -45,7 +45,7 @@ export class EventEmitter {
     return { dispose: () => this.off(event, cb) };
   }
 
-  off(event: string, callback?: EventCallback) {
+  off(event: string, callback?: EventCallback): void {
 
     const events = this.events.get(event);
 
