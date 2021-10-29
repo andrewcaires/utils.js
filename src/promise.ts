@@ -1,18 +1,18 @@
-type forEachCallback<T> = (value: T, index: number, array: Array<T>) => Promise<void>;
+type forEachCallback<T> = (value: T, index: number, arr: Array<T>) => Promise<void>;
 
-export const forEachAsync = async <T>(array: Array<T>, callback: forEachCallback<T>, thisArg?: any): Promise<void> => {
+export const forEachAsync = async <T>(arr: Array<T>, callback: forEachCallback<T>, thisArg?: any): Promise<void> => {
 
-  await Promise.all(array.map((value, index) => {
+  await Promise.all(arr.map((value, index) => {
 
-    return callback.call(thisArg || null, value, index, array);
+    return callback.call(thisArg || null, value, index, arr);
   }));
 }
 
-export const forEachSeries = async <T>(array: Array<T>, callback: forEachCallback<T>, thisArg?: any): Promise<void> => {
+export const forEachSeries = async <T>(arr: Array<T>, callback: forEachCallback<T>, thisArg?: any): Promise<void> => {
 
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < arr.length; index++) {
 
-    await callback.call(thisArg || null, array[index], index, array);
+    await callback.call(thisArg || null, arr[index], index, arr);
   }
 }
 
