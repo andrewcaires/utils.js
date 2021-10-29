@@ -1,3 +1,4 @@
+import { stringReverse } from './string';
 import { isUndefined } from './type';
 
 interface Indexes {
@@ -46,4 +47,20 @@ const next = (mask: string, text: string, index: Indexes): string => {
 export const mask = (mask: string, text: string): string => {
 
     return next(mask, text, { mask: -1, text: -1 });
+}
+
+export const maskMoney = (mask: string, text: string, decimal: number = 2): string => {
+
+    decimal++;
+
+    text = parseInt((text || '0').replace(/\W/g, '')).toString();
+
+    return maskReverse(mask, text.length < decimal ? (('0'.repeat(decimal)) + text).slice(decimal * -1) : text);
+}
+
+const _mask = mask;
+
+export const maskReverse = (mask: string, text: string): string => {
+
+    return stringReverse(_mask(stringReverse(mask), stringReverse(text)));
 }
