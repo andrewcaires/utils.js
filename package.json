@@ -1,6 +1,6 @@
 {
   "name": "@andrewcaires/utils.js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "JavaScript utility library for web and nodejs development",
   "main": "dist/utilsjs.umd.js",
   "module": "dist/utilsjs.esm.js",
